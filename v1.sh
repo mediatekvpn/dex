@@ -89,7 +89,7 @@ yum -y install stunnel dropbear &> /dev/null
 #sudo mkdir /var/run/stunnel &> /dev/null
 #sudo chown nobody:nobody /var/run/stunnel &> /dev/null
 cat << EOF > /etc/sysconfig/dropbear
-OPTIONS=" -p 444 -p 441"
+OPTIONS=" -p 550 -p 555"
 EOF
 
 cat <<EOF >/etc/stunnel/stunnel.pem
